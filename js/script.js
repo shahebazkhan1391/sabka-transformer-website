@@ -15,22 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (mobileBtn && navLinks) {
         mobileBtn.addEventListener('click', () => {
-            const isExpanded = navLinks.style.display === 'flex';
-            if (isExpanded) {
-                navLinks.style.display = 'none';
-            } else {
-                navLinks.style.display = 'flex';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.background = '#ffffff';
-                navLinks.style.padding = '20px 0';
-                navLinks.style.boxShadow = '0 10px 15px -3px rgba(0,0,0,0.1)';
-                navLinks.style.gap = '20px';
-                navLinks.style.borderTop = '1px solid #e2e8f0';
-            }
+            navLinks.classList.toggle('active');
+            mobileBtn.classList.toggle('active');
         });
     }
 });
