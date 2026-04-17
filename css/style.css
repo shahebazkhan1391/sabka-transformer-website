@@ -724,4 +724,218 @@ footer {
     .about, .products, .why-choose-us, .contact-cta {
         padding: 50px 0;
     }
+
+    .page-header {
+        padding: 120px 20px 40px;
+    }
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .detailed-product-card {
+        grid-template-columns: 1fr !important;
+        padding: 25px !important;
+    }
+    .detailed-product-img {
+        height: 250px;
+    }
+}
+
+/* Products Page Specifics */
+.page-header {
+    text-align: center;
+    padding: 160px 0 60px;
+    background-color: var(--grey-light);
+    border-bottom: 1px solid var(--grey-border);
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--primary-blue);
+}
+
+.detailed-product-section {
+    padding: 80px 0;
+}
+
+.detailed-product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: var(--white);
+    border: 1px solid var(--grey-border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.detailed-product-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.detailed-product-img {
+    background: var(--white);
+    border: 1px solid var(--grey-border);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.detailed-product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.detailed-product-card:hover .detailed-product-img img {
+    transform: scale(1.05);
+}
+
+.detailed-product-info h2 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.spec-list {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.spec-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--grey-light);
+    display: flex;
+    align-items: center;
+}
+
+.spec-list li strong {
+    width: 120px;
+    color: var(--text-primary);
+}
+
+.feature-list-title {
+    font-size: 1.1rem;
+    color: var(--dark);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-list {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    color: var(--text-secondary);
+}
+
+.feature-list li {
+    margin-bottom: 8px;
+}
+
+/* Contact Page Specifics */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+}
+
+.contact-info-card {
+    background: var(--grey-light);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--grey-border);
+}
+
+.contact-info-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    font-size: 1.25rem;
+    color: var(--accent-blue);
+    margin-right: 15px;
+    min-width: 25px;
+}
+
+.contact-text h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--dark);
+}
+
+.contact-text p, .contact-text a {
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 3px;
+}
+
+.contact-text a:hover {
+    color: var(--accent-blue);
+}
+
+.contact-form-container {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--grey-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--grey-border);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+    background: var(--grey-light);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
