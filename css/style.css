@@ -1041,3 +1041,26 @@ textarea.form-control {
         font-size: 1.8rem;
     }
 }
+
+
+
+/* Whatsapp floating button */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-float:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
